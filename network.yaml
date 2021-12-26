@@ -145,7 +145,7 @@ network:
         root_token: "s.MEqguhHxPinBDTMSa8avw7jV"
         secret_path: "hyperledger"
       # Git Repo details which will be used by GitOps/Flux.
-      # Do not check-in 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
+      # Do not check-in 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
       gitops:
         git_protocol: "https" # Option for git over https or ssh
         git_url: "https://github.com/businessblockchaindev/bevel.git"         # Gitops https or ssh url for flux value files 
@@ -154,7 +154,7 @@ network:
         chart_source: "platforms/hyperledger-fabric/charts"     # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/businessblockchaindev/bevel.git"   # Gitops git repository URL for git push  (without https://)
         username: "businessblockchaindev"          # Git Service user who has rights to check-in in all branches
-        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
+        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
         email: "git@email.com"                # Email to use in git config
         private_key: "/home/ebastidas/gitops"          # Path to private key file which has write-access to the git repo (Optional for https; Required for ssh)
      
@@ -226,7 +226,7 @@ network:
         root_token: "s.MEqguhHxPinBDTMSa8avw7jV"
         secret_path: "hyperledger"
       # Git Repo details which will be used by GitOps/Flux.
-      # Do not check-in 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
+      # Do not check-in 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
       gitops:
         git_protocol: "https" # Option for git over https or ssh
         git_url: "https://github.com/businessblockchaindev/bevel.git"         # Gitops https or ssh url for flux value files 
@@ -235,7 +235,7 @@ network:
         chart_source: "platforms/hyperledger-fabric/charts"     # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/businessblockchaindev/bevel.git"   # Gitops git repository URL for git push  (without https://)
         username: "businessblockchaindev"          # Git Service user who has rights to check-in in all branches
-        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
+        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
         email: "git@email.com"                # Email to use in git config
         private_key: "/home/ebastidas/gitops"          # Path to private key file which has write-access to the git repo (Optional for https; Required for ssh)
 
@@ -268,16 +268,16 @@ network:
             targetPort: 3000
             port: 3000
           chaincode:
-            name: "chaincode_name" #This has to be replaced with the name of the chaincode
+            name: "cc_fledger" #This has to be replaced with the name of the chaincode
             version: "1" #This has to be replaced with the version of the chaincode
             maindirectory: "chaincode_main"  #The main directory where chaincode is needed to be placed
-            lang: "golang"  # The language in which the chaincode is written ( golang/java/node )
+            lang: "java"  # The language in which the chaincode is written ( golang/java/node )
             repository:
-              username: "businessblockchaindev"          # Git Service user who has rights to check-in in all branches
-              password: "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"
-              url: "github.com/businessblockchaindev/bevel.git"
-              branch: develop
-              path: "chaincode_src"   #The path to the chaincode 
+              username: "ebastidasb"          # Git Service user who has rights to check-in in all branches
+              password: "glpat-p2XTiwV_LLVEYsTPWuTo"
+              url: "github.com/businessblockchain/fledger-safe-blockchain.git"
+              branch: master
+              path: "hfabric/fledger-safe-chaincode"   #The path to the chaincode 
             arguments: 'chaincode_args' #Arguments to be passed along with the chaincode parameters
             endorsements: "" #Endorsements (if any) provided along with the chaincode
     
