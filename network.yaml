@@ -145,7 +145,7 @@ network:
         root_token: "s.MEqguhHxPinBDTMSa8avw7jV"
         secret_path: "hyperledger"
       # Git Repo details which will be used by GitOps/Flux.
-      # Do not check-in D3v3!334
+      # Do not check-in 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
       gitops:
         git_protocol: "https" # Option for git over https or ssh
         git_url: "https://github.com/businessblockchaindev/bevel.git"         # Gitops https or ssh url for flux value files 
@@ -154,7 +154,7 @@ network:
         chart_source: "platforms/hyperledger-fabric/charts"     # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/businessblockchaindev/bevel.git"   # Gitops git repository URL for git push  (without https://)
         username: "businessblockchaindev"          # Git Service user who has rights to check-in in all branches
-        password: "D3v3!334"          # Git Server user password/token (Optional for ssh; Required for https)
+        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
         email: "git@email.com"                # Email to use in git config
         private_key: "/home/ebastidas/gitops"          # Path to private key file which has write-access to the git repo (Optional for https; Required for ssh)
      
@@ -226,7 +226,7 @@ network:
         root_token: "s.MEqguhHxPinBDTMSa8avw7jV"
         secret_path: "hyperledger"
       # Git Repo details which will be used by GitOps/Flux.
-      # Do not check-in D3v3!334
+      # Do not check-in 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
       gitops:
         git_protocol: "https" # Option for git over https or ssh
         git_url: "https://github.com/businessblockchaindev/bevel.git"         # Gitops https or ssh url for flux value files 
@@ -235,7 +235,7 @@ network:
         chart_source: "platforms/hyperledger-fabric/charts"     # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/businessblockchaindev/bevel.git"   # Gitops git repository URL for git push  (without https://)
         username: "businessblockchaindev"          # Git Service user who has rights to check-in in all branches
-        password: "D3v3!334"          # Git Server user password/token (Optional for ssh; Required for https)
+        password: "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"          # Git Server user password/token (Optional for ssh; Required for https)
         email: "git@email.com"                # Email to use in git config
         private_key: "/home/ebastidas/gitops"          # Path to private key file which has write-access to the git repo (Optional for https; Required for ssh)
 
